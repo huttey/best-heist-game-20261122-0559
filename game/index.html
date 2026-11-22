@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Aurum Job — a one-room heist</title>
+<style>
+  body { margin: 0; background: #0c0e13; color: #e8e4d8; font-family: sans-serif; }
+  .wrap { width: 960px; margin: 24px auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; color: #f2c14e; }
+  p { margin: 4px 0 12px; color: #9aa3b2; font-size: 14px; }
+  canvas { display: block; background: #1b1f28; border: 2px solid #3a3f4d; }
+  .keys { font-size: 13px; color: #9aa3b2; margin-top: 10px; line-height: 1.7; }
+  .keys b { color: #e8e4d8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>THE AURUM JOB</h1>
+  <p>One gallery. Three guards. Two cameras. One idol. Cross the room, steal it, slip out the skylight.</p>
+  <canvas id="game" width="960" height="640"></canvas>
+  <div class="keys">
+    <b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak (slower, harder to spot) &nbsp;·&nbsp;
+    <b>Click</b> toss a coin to pull a guard away &nbsp;·&nbsp; <b>R</b> restart &nbsp;·&nbsp; <b>M</b> mute<br>
+    Stay out of the yellow cones. Cameras sweep blue. If the alarm hits 100%, the gallery locks down.
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
